@@ -1,0 +1,39 @@
+.todo {
+
+    &__sidebar {
+        position: relative;
+        background-color: #eaeaea;
+        width: 450px;
+        padding: 40px;
+        border-right: 2px solid #dedede;
+    }
+
+    &__sidebar-list {
+        margin-bottom: 40px;
+        li {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            height: 50px;
+            padding-left: 10px;
+
+            &.active {
+                background-color: #fafafa;
+                border-radius: 5px;
+                box-shadow: 0 0 6px rgba(#222222, .08);
+            }
+
+            span {
+                padding-left: 15px;
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 0;
+            }
+
+            .fa {
+                font-size: 20px;
+                color: #868686;
+            }
+        }
+    }
+}

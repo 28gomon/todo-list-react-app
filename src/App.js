@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { List } from "./components";
+
+import './SCSS/app.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className={ 'app' }>
+
+			<div className={ 'todo' }>
+				<div className={ 'todo__sidebar' }>
+
+					<List/>
+
+					<ul className={ 'todo__sidebar-list' }>
+						<li>
+							<i className="fa fa-circle"/>
+							<span>Покупки</span>
+						</li>
+
+						<li>
+							<i className="fa fa-circle"/>
+							<span>Фильмы</span>
+						</li>
+					</ul>
+				</div>
+
+				<div className={ 'todo__tasks' }>
+					tasks
+				</div>
+			</div>
+
+		</div>
+	);
 }
 
 export default App;
